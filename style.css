@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #555;
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;   
+}
+
+li {
+    margin-right: -5px; /*li'ler arasında boşluk oluştu. Nedenini anlamadım. Çözmek için bunu ekledim.*/
+    padding: 0;
+}
+
+li a{
+    display: block; /*padding uygulamak için*/
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px;
+    text-align: center;
+}
+
+li a.active {
+    background-color: tomato;
+}
+
+li:hover {
+    background-color: #000;
+    cursor: pointer;
+  }
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+li i{
+    margin-right: 5px;
+}
+
+@media only screen and (min-width:480px){ /*mobile first: 480px üzerinde yanyana göster*/
+    li{
+        display: inline-block;
+    }
+
+}
